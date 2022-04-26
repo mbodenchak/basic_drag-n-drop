@@ -47,6 +47,9 @@ body {
   width: 60px;
 }
 
+.draggable-list li.over .draggable {
+  background-color: #eaeaea;
+}
 .draggable-list .person-name {
   margin: 0 20px 0 0;
 }
@@ -64,4 +67,21 @@ body {
   justify-content: space-between;
   padding: 15px;
   flex: 1;
+}
+
+.check {
+  background-color: var(--background-color);
+  border: none;
+  color: var(--text-color);
+  font-size: 16px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.check:active {
+  transform: scale(0.98);
+}
+
+.check:focus {
+  outline: none;
 }
